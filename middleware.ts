@@ -9,8 +9,7 @@ export default function middleWare(request: NextRequest) {
     return NextResponse.redirect(new URL("/products", request.url));
   }
 }
-
 // 특정 경로에서의 실행
 export const config = {
-  matcher: ["/products/468"],
+  matcher: ["/products/468", "/products/498"],
 };
